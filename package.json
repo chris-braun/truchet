@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "publish": "rm -rf docs && cp -r dist docs"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
