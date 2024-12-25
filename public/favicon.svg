@@ -4,7 +4,7 @@
     height="16"
     fill="#edff00"
   />
-  <g fill="#00a4cc">
+  <g fill="#00a4cc" stroke="#28334a" stroke-width="2">
     <ellipse cx="0" cy="0" rx="8" ry="8" />
     <ellipse cx="16" cy="16" rx="8" ry="8" />
   </g>
