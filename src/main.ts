@@ -1,31 +1,21 @@
+import { Truchet } from "./truchet";
+
 document.onreadystatechange = () => {
   if (document.readyState !== "complete") {
     return;
   }
 
-  const canvas = document.querySelector("canvas") as HTMLCanvasElement;
-  const context = canvas.getContext("2d");
-  if (!context) {
-    return;
+  const mosaicCanvas = document.querySelector("canvas") as HTMLCanvasElement;
+  const mosaic = mosaicCanvas.getContext("2d");
+  if (!mosaic) {
+    throw new Error("Could not create mosaic because getContext returned null");
   }
 
-  const primaryColor = "#00a4cc";
-  const secondaryColor = "#edff00";
-  const stroke = "#28334a";
-  let color = primaryColor;
+  const truchet = new Truchet(mosaic, mosaicCanvas.width, mosaicCanvas.height);
 
-  const drawCanvas = () => {
-    context.fillStyle = color;
-    context.strokeStyle = stroke;
-    context.lineWidth = 2;
-    context.fillRect(0, 0, canvas.width, canvas.height);
-    context.strokeRect(0, 0, canvas.width, canvas.height);
+  mosaicCanvas.onclick = () => {
+    truchet.draw();
   };
 
-  canvas.onclick = () => {
-    color = color === primaryColor ? secondaryColor : primaryColor;
-    drawCanvas();
-  };
-
-  drawCanvas();
+  truchet.draw();
 };
