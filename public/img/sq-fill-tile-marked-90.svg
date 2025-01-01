@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-  <rect width="16" height="16" fill="white" stroke="slategray" stroke-width="1" />
-  <rect x="8" y="0" width="8" height="8" />
-  <rect x="0" y="8" width="8" height="8" />
-  <line x1="0" y1="0" x2="16" y2="16" stroke="cyan" />
+  <rect width="16" height="16" fill="white" stroke="slategray" />
+  <rect x="8" width="8" height="8" />
+  <rect y="8" width="8" height="8" />
+  <line x2="16" y2="16" stroke="cyan" />
 </svg>
