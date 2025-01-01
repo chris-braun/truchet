@@ -129,15 +129,11 @@
 
         <p>
           To make the pattern easier to see and talk about, let's indicate the
-          major diagonal:
+          major diagonal and also stipulate that magenta means the primary color
+          is aligned with the major diagonal and cyan means it's not. So
           <img src="/img/sq-fill-tile-marked.svg" width="16" height="16" /> and
           <img src="/img/sq-fill-tile-marked-90.svg" width="16" height="16" />.
-          Magenta means the color is aligned with the major diagonal and cyan
-          means it's not. Now we can say that for the color to be continuous in
-          a given tiling it must switch from running along the major diagonal to
-          running along the minor diagonal every two tiles in both directions.
-          In other words, we have discovered that the pattern for coloring
-          Truchet tiles is a fixed checkerboard pattern!
+          Perfect! Let's use that and finish filling in our pattern from above.
         </p>
 
         <table>
@@ -243,23 +239,20 @@
         </table>
 
         <p>
-          Beautiful! It's true that the pattern of colors is a fixed
-          checkerboard pattern. Further, there are only two color groups. One
-          where the primary color is aligned with the major diagonal,
-          <img src="/img/sq-fill-tile-marked.svg" width="16" height="16" />, and
-          the other where the primary color is unaligned with the major diagonal
-          <img src="/img/sq-fill-tile-marked-90.svg" width="16" height="16" />.
+          Beautiful! We have discovered that the pattern for coloring Truchet
+          tiles is a fixed checkerboard pattern alternating between aligned and
+          unaligned tiles in all directions.
         </p>
 
         <p>
           Now we need to step back from the abstract and reintroduce the quarter
           circles and 90˚ rotations. The result is similar to the colors. The
           quarter circles can run either along the major diagonal or the minor
-          diagonal but arbitrarily and not in a fixed pattern in contraast with
-          how coloring works. Meaning only four tiles in total are needed to
-          render any tiling in full color. The four tiles are divided into two
-          alignment groups with two tiles, normal and rotated, in each alignment
-          group:
+          diagonal but arbitrarily as opposed to a fixed pattern which is the
+          part that's different from how coloring works. Meaning only four tiles
+          in total are needed to render any tiling in full color. The four tiles
+          are divided into two alignment groups with two tiles, normal and
+          rotated, in each alignment group:
           <img src="/img/aligned-normal.svg" width="16" height="16" /> (aligned
           normal),
           <img src="/img/aligned-rotated.svg" width="16" height="16" /> (aligned
@@ -283,16 +276,16 @@
           tiles, normal and rotated, for each of the four tiles that make up one
           super tile. Since the checkerboard coloring is implicit in the
           position of a tile within the super tile we only need to count the two
-          possible tiles in each position of the 2&times;2 super tile. In other
-          words, since 2 &times; 2 &times; 2 &times; 2 = 16, only 16 unique
-          super tiles are needed to render any and all possible tilings in full
-          color. Amazing!
+          possible tiles in each position of the 2&times;2 super tile to derive
+          a unique super tile. In other words, since 2 &times; 2 &times; 2
+          &times; 2 = 16, only 16 unique super tiles are needed to render any
+          and all possible tilings in full color. Amazing!
         </p>
 
         <p>
           It is super convenient to represent these 16 super tiles with binary
           numbers from 0b0000 to 0b1111 where 0 means normal and 1 means
-          rotated. The bits fromn left to right align with a 2&times;2 super
+          rotated. The bits from left to right align with a 2&times;2 super
           tile's top left, top right, bottom left, and bottom right,
           respectively. Here are all 16 super tiles in numerical order.
         </p>
@@ -318,9 +311,9 @@
 
         <p>
           Once you have super tiles, all it takes to cover a plane is to loop
-          through all of the rows and columns placing one of the 16 tiles,
-          usually but not necessarily at random, at each step. The app drawing
-          the tiling at the top of this page does just that.
+          through all of the rows and columns placing one of the 16 tiles at
+          each step. Usually but not necessarily at random. The app drawing the
+          tiling at the top of this page does just that.
         </p>
 
         <p>
