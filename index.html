@@ -294,25 +294,25 @@
           numbers from 0b0000 to 0b1111 where 0 means normal and 1 means
           rotated. The bits fromn left to right align with a 2&times;2 super
           tile's top left, top right, bottom left, and bottom right,
-          respectively. Here are all 16 super tiles.
+          respectively. Here are all 16 super tiles in numerical order.
         </p>
         <div class="super-tiles">
-          <td><img src="/img/tile-0000.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0001.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0010.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0011.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0100.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0101.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0110.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-0111.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1000.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1001.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1010.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1011.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1100.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1101.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1110.svg" width="60" height="60" /></td>
-          <td><img src="/img/tile-1111.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0000.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0001.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0010.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0011.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0100.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0101.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0110.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-0111.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1000.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1001.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1010.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1011.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1100.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1101.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1110.svg" width="60" height="60" /></td>
+          <td><img src="/img/st-1111.svg" width="60" height="60" /></td>
         </div>
 
         <p>
@@ -320,6 +320,12 @@
           through all of the rows and columns placing one of the 16 tiles,
           usually but not necessarily at random, at each step. The app drawing
           the tiling at the top of this page does just that.
+        </p>
+
+        <p>
+          Technically speaking, uncolored Truchet tiles can be made into super
+          tiles, too, but it doesn't buy you as much in terms of reducing
+          complexity. So it's kind of pointless.
         </p>
 
         <p>

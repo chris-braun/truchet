@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <clipPath id="topLeft">
+    <rect width="16" height="16" />
+  </clipPath>
+  <clipPath id="topRight">
+    <rect width="16" height="16" />
+  </clipPath>
+  <clipPath id="bottomLeft">
+    <rect width="16" height="16" />
+  </clipPath>
+  <clipPath id="bottomRight">
+    <rect width="16" height="16" />
+  </clipPath>
+  <svg clip-path="url(#topLeft)">
+    <rect width="16" height="16" fill="black" />
+    <circle cx="16" r="8" fill="white" />
+    <circle cy="16" r="8" fill="white" />
+  </svg>
+  <svg x="16" clip-path="url(#topRight)">
+    <rect width="16" height="16" fill="black" />
+    <circle r="8" fill="white" />
+    <circle cx="16" cy="16" r="8" fill="white" />
+  </svg>
+  <svg y="16" clip-path="url(#bottomLeft)">
+    <rect width="16" height="16" fill="white" />
+    <circle cx="16" r="8" />
+    <circle cy="16" r="8" />
+  </svg>
+  <svg x="16" y="16" clip-path="url(#bottomRight)">
+    <rect width="16" height="16" fill="white" />
+    <circle r="8" />
+    <circle cx="16" cy="16" r="8" />
+  </svg>
+  <rect width="32" height="32" fill="none" stroke="slategray" />
+</svg>
