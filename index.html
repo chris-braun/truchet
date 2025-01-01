@@ -14,22 +14,17 @@
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <a
-      class="github-fork-ribbon right-top"
-      href="https://github.com/chris-braun/truchet"
-      data-ribbon="Fork me on GitHub"
-      title="Fork me on GitHub"
-      >Fork me on GitHub</a
-    >
     <div class="layout">
       <div class="content">
         <h1 class="title">Coloring Truchet Tiles</h1>
+
         <div class="app">
           <canvas width="800" height="250"></canvas>
           <div class="caption" style="user-select: none">
             Click the tiling to generate a new one
           </div>
         </div>
+
         <p>
           I first heard about computer programs that use
           <a href="https://en.wikipedia.org/wiki/Truchet_tiles"
@@ -60,6 +55,7 @@
         </p>
 
         <p>The key is to start simple and place a single tile.</p>
+
         <table>
           <tr>
             <td><img src="/img/sq-fill-tile.svg" width="50" height="50" /></td>
@@ -67,6 +63,7 @@
         </table>
 
         <p>Then continue the row until there's a pattern.</p>
+
         <table>
           <tr>
             <td><img src="/img/sq-fill-tile.svg" width="50" height="50" /></td>
@@ -82,6 +79,7 @@
         </table>
 
         <p>Then continue the column until there's a pattern.</p>
+
         <table>
           <tr>
             <td><img src="/img/sq-fill-tile.svg" width="50" height="50" /></td>
@@ -140,6 +138,7 @@
           In other words, we have discovered that the pattern for coloring
           Truchet tiles is a fixed checkerboard pattern!
         </p>
+
         <table>
           <tr>
             <td>
@@ -296,6 +295,7 @@
           tile's top left, top right, bottom left, and bottom right,
           respectively. Here are all 16 super tiles in numerical order.
         </p>
+
         <div class="super-tiles">
           <td><img src="/img/st-0000.svg" width="60" height="60" /></td>
           <td><img src="/img/st-0001.svg" width="60" height="60" /></td>
@@ -336,6 +336,17 @@
           >
           for building up super tiles and drawing them onto a canvas.
         </p>
+
+        <div class="note">
+          <img src="/img/octicons-mark-github.svg" width="24" height="24" />
+          <span
+            ><a href="https://github.com/chris-braun/truchet/"
+              >Full source code</a
+            >
+            available on GitHub in the truchet repository</span
+          >
+        </div>
+
         <div style="font-size: 3rem">∎</div>
       </div>
     </div>
