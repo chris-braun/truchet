@@ -112,5 +112,8 @@ export class Truchet {
         this.mosaic.drawImage(this.randomSuperTile(), x, y);
       }
     }
+
+    this.mosaic.strokeStyle = LINE_COLOR;
+    this.mosaic.strokeRect(0, 0, this.width, this.height);
   }
 }
