@@ -1,8 +1,8 @@
 # Truchet
 
-The output of this project is the [writeup](https://chris-braun.github.io/truchet/). Read the writeup for the backstory on `truchet.ts`. Then read `truchet.ts`. That's where all of the magic happens.
+Truchet documents a method for statically coloring Truchet tiles. The output of this project is the [writeup](https://chris-braun.github.io/truchet/). Please read the writeup if you're interested in the backstory on `truchet.ts`. Next read `truchet.ts`. That's where the magic happens.
 
-Beyond that, `main.ts` is a little bit of code to glue `index.html` and `truchet.ts` together. The rest of the files are for Vite and GitHub. Your favorite AI should be able to explain them. All of the files just mentioned can be safely ignored unless you are interested in those details.
+The other file is `main.ts` which is a little bit of code to glue `index.html` and `truchet.ts` together. The rest of the files are for Vite and GitHub. All of the files just mentioned can be safely ignored unless you are interested in those details.
 
 ## Installation
 
